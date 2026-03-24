@@ -1,0 +1,137 @@
+:root{
+    --primary-c:#AD8B73;
+    --sec-c:#CEAB93;
+    --tri1-c:#E3CAA5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background: var(--primary-c);
+}
+.allelem{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 40px;
+    position: absolute;
+}
+.allelem .elem{
+    position: relative;
+    height: 350px;
+    width: 400px;
+    background: var(--sec-c);
+    border-radius: 20%;
+    transition: all ease .1s;
+    cursor: pointer;
+}
+.elem:active{
+    scale: .97;
+}
+.elem h1{
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    padding-top: 85%;
+    color: var(--sec-c);
+    font-size: 30px;
+    display: block;
+}
+.elem img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.fullelem{
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-c);
+    position: absolute;
+    display: none;
+    padding: 10px;
+}
+.fullelem h1{
+    text-transform: uppercase;
+
+}
+.back{
+    position: absolute;
+    right: 5%;
+    top: 1.5%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.back:active{
+    scale: .95;
+}
+.Task-list-fullelem{
+    display: block;
+    font-size: 25px;
+}
+.Task-list-fullelem .Task-Container{
+   height: 80%;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.Task-list-fullelem .Task-Container .add-task{
+    height: 100%;
+    width: 33%;
+    margin-top: 40px;
+    background-color:var(--sec-c);
+    border-radius: 20px;
+
+}
+.Task-list-fullelem .Task-Container .all-task{
+    height: 100%;
+    width: 65%;
+    margin-top: 40px;
+    background-color: var(--sec-c);
+    border-radius: 20px;
+}
+.Task-list-fullelem .Task-Container .add-task form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 10px;
+}
+.Task-Container .add-task form input{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: var(--primary-c);
+    border-radius: 10px;
+    color: aliceblue;
+    outline: none;
+    border: none;
+}
+.Task-Container .add-task form textarea{
+    width: 100%;
+    background-color: var(--primary-c);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.Task-Container .add-task form button{
+    padding: 15px 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--tri1-c);
+}
