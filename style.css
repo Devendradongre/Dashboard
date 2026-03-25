@@ -2,6 +2,7 @@
     --primary-c:#AD8B73;
     --sec-c:#CEAB93;
     --tri1-c:#E3CAA5;
+    --white-c:white;
 }
 *{
     margin: 0;
@@ -69,38 +70,49 @@ html, body{
 .back{
     position: absolute;
     right: 5%;
-    top: 1.5%;
+    top: 1.5%;  
     padding: 10px 20px;
     border-radius: 20px;
     background-color: #fff;
+    border: none;
 }
 .back:active{
     scale: .95;
 }
 .Task-list-fullelem{
-    display: block;
     font-size: 25px;
 }
 .Task-list-fullelem .Task-Container{
-   height: 80%;
+   height: 70%;
    width: 100%;
    display: flex;
    justify-content: space-between;
 }
 .Task-list-fullelem .Task-Container .add-task{
-    height: 100%;
+    height: 90%;
     width: 33%;
     margin-top: 40px;
     background-color:var(--sec-c);
     border-radius: 20px;
-
+    overflow: auto;
+}
+.add-task::-webkit-scrollbar{
+    display: none;
 }
 .Task-list-fullelem .Task-Container .all-task{
-    height: 100%;
+    height: 90%;
     width: 65%;
     margin-top: 40px;
+    padding: 10px 40px;
     background-color: var(--sec-c);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+.all-task::-webkit-scrollbar{
+    display: none;
 }
 .Task-list-fullelem .Task-Container .add-task form{
     display: flex;
@@ -111,27 +123,51 @@ html, body{
 }
 .Task-Container .add-task form input{
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     font-size: 20px;
-    background-color: var(--primary-c);
+    background-color: var(--white-c);
     border-radius: 10px;
-    color: aliceblue;
+    /* color: aliceblue; */
     outline: none;
     border: none;
 }
 .Task-Container .add-task form textarea{
     width: 100%;
-    background-color: var(--primary-c);
+    height: 485px;
+    background-color: var(--white-c);
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
     font-size: 20px;
     border: none;
     outline: none;
 }
 .Task-Container .add-task form button{
-    padding: 15px 25px;
+    width: 100%;
+    padding: 20px 25px;
     font-size: 20px;
     border: none;
     border-radius: 10px;
-    background-color: var(--tri1-c);
+    background-color: var(--white-c);
+}
+.all-task .task{
+    height: 15%;
+    width: 98%;
+    background-color: var(--white-c);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.all-task .task button{
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+.task h5{
+   text-transform: capitalize ;
 }
