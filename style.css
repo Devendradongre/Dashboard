@@ -1,5 +1,5 @@
 :root{
-    --primary-c:#AD8B73;
+    --primary-c: powderblue;;
     --sec-c:#CEAB93;
     --tri1-c:#E3CAA5;
     --white-c:white;
@@ -70,7 +70,7 @@ html, body{
 .back{
     position: absolute;
     right: 5%;
-    top: 1.5%;  
+    top: .7%;  
     padding: 10px 20px;
     border-radius: 20px;
     background-color: #fff;
@@ -170,4 +170,109 @@ html, body{
 }
 .task h5{
    text-transform: capitalize ;
+}
+.Daily-planer-fullelem{
+    display: block;
+}
+.pcontainer{
+    height: 100%;
+    width: 100%;
+    background: var(--tri1-c);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: column; */
+}
+.fullplaner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.planer-inputcontainer{
+    width: 15%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.planer-inputcontainer h1{
+    margin: 10px;
+    font-style: italic;
+}
+.planer-inputcontainer .form{
+   height: 80%;
+   width: 95%;
+   background-color: var(--tri1-c);
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+}
+
+.form #task-input{
+    padding: 15px 20px;
+    margin-bottom: 5px;
+    border-radius: 5px ;
+    border: none;
+    outline: none;
+}
+.form #task-time{
+    padding: 60px 65px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    
+}
+.savebtn{
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 20px;
+}
+.planer-container{
+    height: 100%;
+    width: 85%;
+    background-color: rgb(185, 128, 128);
+    display: flex;
+    
+    flex-wrap: wrap;
+    overflow: auto;
+    padding: 20px;
+} 
+.planer-container .planer-card{
+    background-color: var(--primary-c);
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.planer-card .complete-btn{
+    margin-top: auto;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2d8f3f;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.planer-card .complete-btn:hover{
+    background: #257634;
+}
+
+.time-value h1{
+  margin-top: 25px;
 }
