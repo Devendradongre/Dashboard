@@ -117,6 +117,7 @@ function startIndividualTimer(element, targetTime) {
         } else {
             element.innerText = "Time's up! ⏰"
             element.style.color = 'red'
+            element.classList.add('blink')
             clearInterval(intervalId)
         }
     }, 1000)
