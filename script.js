@@ -89,7 +89,7 @@ btn.addEventListener('click', function (e) {
 
 // Complete button handling (event delegation)
 cardcontainer.addEventListener('click', function(e) {
-    if (e.target.classList.contains('complete-btn')) {
+    if (e.target.classList.contains('complete-btn')) {  
         const card = e.target.closest('.planer-card')
         if (card) {
             // clear associated timer if needed (optional)
@@ -122,3 +122,4 @@ function startIndividualTimer(element, targetTime) {
         }
     }, 1000)
 }
+

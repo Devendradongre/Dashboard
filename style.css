@@ -182,9 +182,7 @@ html, body{
 .task h5{
    text-transform: capitalize ;
 }
-.Daily-planer-fullelem{
-    display: block;
-}
+
 .pcontainer{
     height: 100%;
     width: 100%;
@@ -286,4 +284,34 @@ html, body{
 
 .time-value h1{
   margin-top: 25px 20px;
+}
+/* .Motivational-Quotes-fullelem{
+  display: block;
+} */
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+.Quat-container{
+    height: 600px;
+    width: 700px;
+    background-color: var(--white-c);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Quat{
+    height: 500px;
+    width: 600px;
+    background-color: var(--sec-c);
+    border-radius: 10px;
+    
 }
